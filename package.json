@@ -1,0 +1,19 @@
+{
+  "name": "meteor-open-all",
+  "main": "./lib/my-package",
+  "version": "0.0.1",
+  "description": "open all file in current file path",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "my-package:toggle"
+  },
+  "repository": "https://github.com/atom/my-package",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "glob":"6.0.3"
+  }
+}
