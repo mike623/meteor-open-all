@@ -38,9 +38,12 @@ module.exports = MyPackage =
     console.log finalpath;
     glob(finalpath, {}, (er, files)=>
         console.log files
-        files.forEach((item)=> atom.workspace.open item)
+        files.forEach((item)=> atom.workspace.open(item,{split:"right",searchAllPanes:true}))
 
     );
+
+
+
     # atom.workspace.open("/Users/mike/github/my-package/lib/my-package-view.coffee");
 
     # if(path.isFile()) {
